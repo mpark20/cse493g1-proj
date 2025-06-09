@@ -6,6 +6,14 @@ affect model performance for underrepresented populations.
 This repository contains our paper on introducing interpretability methods to inclusive deep-learning models for neurodegenerative disease classification,
 specifically Alzheimer's disease (AD).
 
+## Requirements
+
+```
+pip install -r requirements.txt
+```
+
+TODO: ADD DEPENDENCY STUFF
+
 ## Data
 We used the [BrainLat](https://www.nature.com/articles/s41597-023-02806-8) dataset, which provides brain imaging data from 780 individuals in Latin America, focusing on underrepresented populations. Previous literature
 showed that most models targeting neurodegenerative disease classification focused on datasets from Europe, the US, and other high-income regions.
@@ -17,10 +25,10 @@ of 416 individuals in various AD stages.
 ```
 .
 ├── src/
-│   ├── data_utils.py     #
-|   └── dataset.py        # Script for defining new MRIDataset
+│   ├── dataset.py        # Script for defining new MRIDataset
+|   └── data_utils.py     # Scripts for data preprocessing (background cleaning, normalization, data augmentation)
 |   └── train.py          # Script for training with any model (ViT, ResNet, or Inception)
-├── 
+├── figures/              # Project figures
 └── 
 ```
 
