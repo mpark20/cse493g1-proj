@@ -8,11 +8,11 @@ specifically Alzheimer's disease (AD).
 
 ## Requirements
 
+To install dependencies, navigate to this repository and create a virtual environment using conda, venv, etc. Then run the following:
+
 ```
 pip install -r requirements.txt
 ```
-
-TODO: ADD DEPENDENCY STUFF
 
 ## Data
 We used the [BrainLat](https://www.nature.com/articles/s41597-023-02806-8) dataset, which provides brain imaging data from 780 individuals in Latin America, focusing on underrepresented populations. Previous literature
@@ -53,6 +53,8 @@ We tuned three different deep-learning models: ViT-B/16, ResNet-50, and Inceptio
 
 ## Interpretability
 TracIn from the library Captum calculates the influence of a given training example on a given test example, representing the loss change for the given test example if the given training example were removed and the model were re-trained. We used TracIn from the library Captum to select the top 10 most influential training examples. We also used Grad-CAM to generate head maps visualizing these most influential image regions. 
+
+For our code, see ``Interpretability.ipynb``
 
 ## Citations
 The data used within this paper is provided by BrainLat:
