@@ -43,7 +43,7 @@ More information on how to replicate this process can be found on the SynthStrip
 
 ### Slice Extraction + Normalization
 Normalization images, scaling pixels to be between 0 and 1, standardizes the input values. These steps lead to faster training and increased generalization.
-Then, the middle slices are taken from the axial view.
+We first normalized the image data, then extracted middle slices from the axial view.
 
 ### Data Augmentation
 Incorporating data augmentation adds regularization to model training, which prevents overfitting and therefore increases testing accuracy. We introduced a 25% probability of removing various patches in the images.
